@@ -1,1 +1,7 @@
  yum install gcc zlib-devel libffi-devel bzip2-devel openssl-devel ncurses-devel sqlite-devel readline-devel tk-devel gdbm-devel libuuid-devel xz-devel
+ 
+wget https://dl.bintray.com/boostorg/release/1.69.0/source/boost_1_69_0.tar.gz
+tar xzvf boost_1_69_0.tar.gz
+cd boost_1_69_0/
+./bootstrap.sh
+./b2 install -j4 #(プロセッサ数)

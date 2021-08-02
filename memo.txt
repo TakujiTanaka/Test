@@ -5,3 +5,12 @@ tar xzvf boost_1_69_0.tar.gz
 cd boost_1_69_0/
 ./bootstrap.sh
 ./b2 install -j4 #(プロセッサ数)
+
+
+cd /usr/local/src
+wget 'http://nlp.ist.i.kyoto-u.ac.jp/DLcounter/lime.cgi?down=http://lotus.kuee.kyoto-u.ac.jp/nl-resource/jumanpp/jumanpp-1.02.tar.xz&name=jumanpp-1.02.tar.xz' -O jumanpp-1.02.tar.xz
+tar Jxfv jumanpp-1.02.tar.xz
+cd jumanpp-1.02/
+./configure
+make
+make install

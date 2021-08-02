@@ -14,3 +14,5 @@ cd jumanpp-1.02/
 ./configure
 make
 make install
+
+echo "‚·‚à‚à‚à‚à‚à‚à‚à‚à‚Ì‚¤‚¿" | jumanpp
